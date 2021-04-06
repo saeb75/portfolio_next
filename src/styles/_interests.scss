@@ -1,0 +1,30 @@
+.interest_box {
+  width: 100%;
+  display: flex;
+  border-radius: 8px;
+  background-color: $darkBlackOpacity;
+  backdrop-filter: blur(5px);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  &_icon {
+    font-size: 1.6rem;
+
+    color: $softGreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 30%;
+    border-right: 1px solid black;
+  }
+  &_name {
+    width: 70%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: white;
+    font-family: $PopFont;
+  }
+}

@@ -1,0 +1,55 @@
+.header_page {
+  width: 100%;
+  display: flex;
+  padding: 70px;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    background-color: #25ca7f;
+    margin-top: 82px;
+    z-index: 9;
+  }
+  h2 {
+    color: white;
+    font-family: $PopFont;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  span {
+    position: absolute;
+    width: 44px;
+    height: 17px;
+    left: calc(50% - 21px);
+    margin-top: 60px;
+    z-index: 99;
+  }
+  span::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px 50px 0px 50px;
+    border: 2px solid #25ca7f !important;
+    top: 10px;
+    transform: rotate(-45deg);
+    background-color: $blackBlue;
+    left: 0;
+  }
+  span::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    background-color: $blackBlue;
+
+    border-radius: 50px 50px 0px 50px;
+    border: 2px solid #25ca7f !important;
+    top: 10px;
+    transform: rotate(125deg);
+  }
+}
