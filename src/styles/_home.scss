@@ -89,7 +89,7 @@
   }
 }
 .layout_body {
-  position: relative;
+  position: unset;
   min-height: 100vh;
   .personal_title {
     left: 50%;
@@ -121,5 +121,32 @@
   transition: all 0.5s;
   &:hover {
     transform: translateY(-10px);
+  }
+}
+.slide_right {
+  right: 0;
+}
+.slide_left {
+  left: 0;
+}
+.slide {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  z-index: 99999;
+  background-color: black;
+  animation: slide 1s;
+  animation-delay: 1s;
+  width: 50%;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  0% {
+    width: 50%;
+  }
+  100% {
+    width: 0%;
+    visibility: hidden;
   }
 }

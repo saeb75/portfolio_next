@@ -2,7 +2,10 @@ import Head from "next/head";
 import Layout from "../Component/Layout/Layout";
 import styles from "../styles/Home.module.css";
 import Typical from "react-typical";
+import { useEffect, useState } from "react";
 export default function Home() {
+  const [slide, setSlide] = useState(false);
+
   return (
     <Layout>
       <div className="personal_title">

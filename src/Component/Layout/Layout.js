@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import {
   FaHouseDamage,
@@ -33,10 +33,7 @@ const Layout = ({ children }) => {
       link: "/portfolio",
       icon: <FaBriefcase />,
     },
-    {
-      link: "/blog",
-      icon: <FaReceipt />,
-    },
+
     {
       link: "/contact",
       icon: <FaEnvelope />,
