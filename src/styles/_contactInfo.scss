@@ -1,0 +1,26 @@
+.contact_info {
+  margin-top: 100px;
+  &_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 140px;
+    &_icon {
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5rem;
+    }
+    &_info {
+      font-size: 1.2rem;
+      color: white;
+    }
+    &_title {
+      font-size: $minSize + 0.2;
+      color: rgb(92, 82, 82);
+      text-transform: capitalize;
+    }
+  }
+}
