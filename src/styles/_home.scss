@@ -164,6 +164,9 @@
   transition: all 0.5s;
   &:hover {
     transform: translateY(-10px);
+    @include mediaQuery($md) {
+      transform: translateY(0px);
+    }
   }
 }
 .slide_right {
