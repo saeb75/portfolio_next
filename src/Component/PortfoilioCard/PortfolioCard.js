@@ -15,24 +15,6 @@ const PortfolioCard = () => {
               ></a>
             </div>
           </Col>
-          <Col md="4">
-            <div className="portfolio_card upAnime">
-              <div className="image"></div>
-              <a
-                href="http://saeb-mern-ecommerce.herokuapp.com/"
-                target="_blank"
-              ></a>
-            </div>
-          </Col>
-          <Col md="4">
-            <div className="portfolio_card upAnime">
-              <div className="image"></div>
-              <a
-                href="http://saeb-mern-ecommerce.herokuapp.com/"
-                target="_blank"
-              ></a>
-            </div>
-          </Col>
         </Row>
       </div>
     </div>
