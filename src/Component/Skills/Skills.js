@@ -79,7 +79,7 @@ let interestList = [
 ];
 const Skills = () => {
   return (
-    <div className="sum_info">
+    <div className="sum_info mb-5">
       <div className="sum_info_box upAnime ">
         <Row>
           {interestList.map((item) => {

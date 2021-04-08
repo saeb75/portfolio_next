@@ -7,6 +7,9 @@
     padding: 10px 20px;
     transition: 0.2s all;
     color: white;
+    @include mediaQuery($md) {
+      margin-bottom: 18px;
+    }
     &:focus {
       box-shadow: none;
       outline: none;

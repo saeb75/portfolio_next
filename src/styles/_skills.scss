@@ -1,6 +1,10 @@
 .skill_image {
   width: 100%;
   height: 50px;
+
+  @include mediaQuery($md) {
+    width: 60%;
+  }
 }
 .express {
   height: 10px;

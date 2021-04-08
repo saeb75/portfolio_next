@@ -1,5 +1,11 @@
 .myContainer {
   width: 65%;
+  @include mediaQuery($lg) {
+    width: 75%;
+  }
+  @include mediaQuery($md) {
+    width: 90%;
+  }
   .ex_ed_box {
     width: 100%;
 

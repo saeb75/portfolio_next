@@ -5,7 +5,13 @@
   align-items: center;
   &_box {
     width: 65%;
-
+    @include mediaQuery($lg) {
+      width: 75%;
+    }
+    @include mediaQuery($md) {
+      width: 90%;
+      z-index: 9999;
+    }
     background-color: transparent;
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
@@ -17,6 +23,13 @@
     border-radius: 50%;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
     overflow: hidden;
+
+    @include mediaQuery($md) {
+      width: 50%;
+      display: flex;
+      margin: auto;
+      margin-bottom: 1rem;
+    }
     img {
       width: 100%;
     }
@@ -27,13 +40,20 @@
     font-size: $bigSize - 0.2;
     font-weight: 600;
     font-family: $PopFont;
+    @include mediaQuery($md) {
+      font-size: $bigSize - 0.6;
+    }
   }
+
   &_loc {
     color: $softGreen;
     text-transform: capitalize;
     display: flex;
     align-items: center;
     margin-top: 10px;
+    @include mediaQuery($md) {
+      font-size: $bigSize - 0.6;
+    }
     span {
       margin-top: 2px;
       margin-left: 5px;
@@ -43,6 +63,10 @@
     margin-top: 20px;
     color: white;
     font-family: $PopFont;
+    text-align: justify;
+    @include mediaQuery($md) {
+      font-size: $bigSize - 0.6;
+    }
   }
   &_circle {
     width: 50px;
@@ -55,6 +79,9 @@
     align-items: center;
     color: white;
     font-size: 1.3rem;
+    @include mediaQuery($md) {
+      margin-bottom: 60px;
+    }
   }
   .circle_title {
     padding: 0;
@@ -85,6 +112,9 @@
       z-index: 999;
       position: relative;
       padding-top: 15px;
+      @include mediaQuery($md) {
+        font-size: $bigSize - 0.3;
+      }
     }
     span {
       width: 100%;
@@ -103,6 +133,10 @@
         position: absolute;
         z-index: 3;
         transition: 0.4s all;
+        @include mediaQuery($md) {
+          height: 40px;
+          top: 10px;
+        }
       }
       &::before {
         content: "";
@@ -115,6 +149,9 @@
         top: 50px;
         z-index: 5;
         transition: 0.4s all;
+        @include mediaQuery($md) {
+          width: 120px;
+        }
       }
     }
 
@@ -125,9 +162,13 @@
         }
         &::before {
           transform: rotate(90deg);
-          left: -38px;
+          left: -35px;
           width: 60px;
           top: 30px;
+          @include mediaQuery($md) {
+            width: 40px;
+            left: -23px;
+          }
         }
       }
     }

@@ -4,6 +4,12 @@
     backdrop-filter: none;
     box-shadow: none;
     width: 65%;
+    @include mediaQuery($lg) {
+      width: 75%;
+    }
+    @include mediaQuery($md) {
+      width: 90%;
+    }
   }
   &_box {
     width: 100%;
@@ -27,8 +33,18 @@
         height: 80px;
         color: white;
         border-radius: 50%;
+        @include mediaQuery($lg) {
+          width: 70px;
+          height: 70px;
+        }
         background-color: $darkBlackOpacity;
         font-size: 2rem;
+        @include mediaQuery($lg) {
+          font-size: 1.8rem;
+        }
+        @include mediaQuery($md) {
+          font-size: 1.8rem;
+        }
       }
     }
     &_title {
@@ -42,6 +58,12 @@
         text-transform: capitalize;
         font-weight: 600;
         font-size: 1.2rem;
+        @include mediaQuery($lg) {
+          font-size: 1rem;
+        }
+        @include mediaQuery($md) {
+          font-size: 1rem;
+        }
       }
     }
     &_desc {
@@ -55,6 +77,12 @@
         font-family: $PopFont;
         font-size: 1rem;
         text-align: center;
+        @include mediaQuery($lg) {
+          font-size: 0.8rem;
+        }
+        @include mediaQuery($md) {
+          font-size: 0.8rem;
+        }
       }
     }
   }

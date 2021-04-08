@@ -7,12 +7,14 @@ import {
   FaBriefcase,
   FaReceipt,
   FaEnvelope,
+  FaBars,
 } from "react-icons/fa";
 import Link from "next/link";
 
 import { useRouter } from "next/router";
 
 const Layout = ({ children }) => {
+  const [open, setOpen] = useState(false);
   const router = useRouter();
   const [state, setState] = useState(router.pathname);
 
@@ -44,7 +46,10 @@ const Layout = ({ children }) => {
     <div className="layout">
       <Container fluid className="layout_container p-0">
         <img src="/assents/background2.jpg" className="background_img" />
-        <div md="1" className="layout_side_container p-0">
+        <div
+          md="1"
+          className={`layout_side_container  p-0 ${open ? "active" : ""}`}
+        >
           <div className="layout_side">
             <div>
               <div className="logo">
@@ -68,7 +73,12 @@ const Layout = ({ children }) => {
             <div className="layout_sound">sound</div>
           </div>
         </div>
-        <div className="p-0 layout_body">{children}</div>
+        <div className="p-0 layout_body">
+          <div className="navbar_container">
+            <FaBars onClick={() => setOpen(!open)} />
+          </div>
+          {children}
+        </div>
       </Container>
     </div>
   );
