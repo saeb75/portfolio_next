@@ -9,11 +9,7 @@
     padding: 8px;
     height: 400px;
     transition: 0.5s all;
-    &:hover {
-      .image {
-        background-position: bottom;
-      }
-    }
+
     .image {
       background: url("../../public/assents/ecommerce.png");
       background-size: cover;
