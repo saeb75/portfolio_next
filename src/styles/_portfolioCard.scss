@@ -18,6 +18,9 @@
       background-position: top;
       transition: 4s all linear;
       border-radius: 10px;
+      @include mediaQuery($md) {
+        background: url("../../public/assents/ecommerce2.png");
+      }
     }
     a {
       position: absolute;
