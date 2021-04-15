@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import Typical from "react-typical";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { pageTransition } from "../Component/Animation/animation";
 export default function Home() {
   const [slide, setSlide] = useState(false);
 
@@ -13,14 +14,7 @@ export default function Home() {
         initial="hidden"
         animate="show"
         exit="exit"
-        variants={{
-          hidden: { x: 1300, opacity: 0 },
-          show: { opacity: 1, x: 0 },
-          exit: {
-            x: 1300,
-            opacity: 0,
-          },
-        }}
+        variants={pageTransition}
         className="personal_title"
       >
         <h1 className="saeb"> hi, i'm Saeb Jafari</h1>

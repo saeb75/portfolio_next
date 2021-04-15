@@ -3,7 +3,8 @@
   display: flex;
   border-radius: 8px;
   background-color: $darkBlackOpacity;
-  backdrop-filter: blur(5px);
+  /*   backdrop-filter: blur(5px); */
+  background-color: $darkBlue;
   margin-top: 10px;
   margin-bottom: 10px;
   &_icon {

@@ -6,6 +6,7 @@ import SumInfo from "../Component/SumInfo/SumInfo";
 import Interests from "../Component/Interests/Interests";
 import Services from "../Component/Services/Services";
 import { motion } from "framer-motion";
+import { pageTransition } from "../Component/Animation/animation";
 const About = () => {
   return (
     <Layout>
@@ -13,14 +14,7 @@ const About = () => {
         initial="hidden"
         animate="show"
         exit="exit"
-        variants={{
-          hidden: { x: 1300, opacity: 0 },
-          show: { opacity: 1, x: 0 },
-          exit: {
-            x: 1300,
-            opacity: 0,
-          },
-        }}
+        variants={pageTransition}
       >
         <Container fluid className="about_container">
           <HeaderPage title={"About Me"} />
