@@ -73,7 +73,7 @@ const Layout = ({ children }) => {
             <div className="layout_sound">sound</div>
           </div>
         </div>
-        <div className="p-0 layout_body">
+        <div className="p-0 layout_body" style={{ overflow: "hidden" }}>
           <div className="navbar_container">
             <FaBars onClick={() => setOpen(!open)} />
           </div>

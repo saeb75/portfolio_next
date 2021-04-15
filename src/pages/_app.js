@@ -1,12 +1,13 @@
 import "../styles/styles.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-function MyApp({ Component, pageProps }) {
+import { AnimatePresence, motion } from "framer-motion";
+function MyApp({ Component, pageProps, router }) {
   return (
-    <>
-      <div className="slide_right slide  diActive"></div>
-      <div className="slide_left slide diActive"></div>
-      <Component {...pageProps} />
-    </>
+    <AnimatePresence exitBeforeEnter>
+      {/*     <div className="slide_right slide  diActive"></div>
+      <div className="slide_left slide diActive"></div> */}
+      <Component {...pageProps} key={router.route} />
+    </AnimatePresence>
   );
 }
 
